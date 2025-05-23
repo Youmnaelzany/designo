@@ -1,7 +1,13 @@
-export default function Container({ children }: { children: React.ReactNode }) {
+import { cn } from "@/lib/utils";
+
+export default function Container({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
   return (
-    <div className="mx-auto max-w-screen-xl px-6 md:px-8 lg:px-12">
-      {children}
-    </div>
+    <div className={cn("mx-auto max-w-screen-xl", className)}>{children}</div>
   );
 }
