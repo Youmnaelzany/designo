@@ -18,7 +18,7 @@ const OfficeInfoLain = {
   email: "M : contact@designo.com",
 };
 
-function SocialMedia() {
+export function SocialMedia() {
   return (
     <div className="flex items-center justify-center gap-6">
       <TooltipProvider>

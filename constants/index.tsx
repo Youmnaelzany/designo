@@ -1,7 +1,6 @@
 import { FaPinterest } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
-import { IoLogoFacebook } from "react-icons/io";
 import { SiYoutubemusic } from "react-icons/si";
 import { FaSquareFacebook } from "react-icons/fa6";
 
@@ -31,8 +30,7 @@ export const socialMediaData = [
     link: "https://www.linkedin.com/",
     icon: <SiYoutubemusic className="size-6" />,
   },
-
-  {FaSquareFacebook 
+  {
     title: "twitter",
     link: "https://www.twitter.com/",
     icon: <FaXTwitter className="size-6" />,

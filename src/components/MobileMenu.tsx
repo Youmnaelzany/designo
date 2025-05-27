@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/sheet";
 
 import NavigationLinks from "./NavigationLinks";
+import { SocialMedia } from "./OfficeInfo";
 
 export default function MobileMenu() {
   return (
@@ -20,12 +21,12 @@ export default function MobileMenu() {
         <SheetHeader>
           {/* <SheetTitle>Are you absolutely sure?</SheetTitle> */}
           <SheetDescription>
-            <nav className="flex flex-col items-center justify-center gap-6 px-6 pt-20">
+            <nav className="flex flex-col items-start gap-6 px-6 pt-20">
               <NavigationLinks className="text-white" />
+              <SocialMedia />
             </nav>
           </SheetDescription>
         </SheetHeader>
       </SheetContent>
     </Sheet>
-  );
-}
+  )}
