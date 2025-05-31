@@ -20,6 +20,27 @@ export default function MobileMenu() {
             <Logo variant="light" />
             <nav className="flex flex-col items-start gap-8 ">
               <NavigationLinks className="text-white" />
+              <Link
+                href={"/web-design"}
+                className={
+                  "group hoverEffect hoverEffect text-sm leading-3.5 font-normal tracking-[0.125rem] uppercase text-white"}
+              >
+                Web Design
+              </Link>
+              <Link
+                href={"/app-design"}
+                className={
+                  "group hoverEffect hoverEffect text-sm leading-3.5 font-normal tracking-[0.125rem] uppercase text-white"}
+              >
+                App Design
+              </Link>
+              <Link
+                href={"/graphic-design"}
+                className={
+                  "group hoverEffect hoverEffect text-sm leading-3.5 font-normal tracking-[0.125rem] uppercase text-white"}
+              >
+                Graphic Design
+              </Link>
             </nav>
             <div className="flex  gap-6 ">
               {socialMediaData.map((item) => (

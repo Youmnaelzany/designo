@@ -1,10 +1,13 @@
 import { FaPinterest } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaSquareFacebook, FaXTwitter } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
 import { SiYoutubemusic } from "react-icons/si";
-import { FaSquareFacebook } from "react-icons/fa6";
 
 export const headerData = [
+  {
+    title: "Home",
+    link: "/",
+  },
   {
     title: "Our Company",
     link: "/about",
@@ -23,7 +26,7 @@ export const socialMediaData = [
   {
     title: "facebook",
     link: "https://www.facebook.com/",
-    icon: <FaSquareFacebook  className="size-6" />,
+    icon: <FaSquareFacebook className="size-6" />,
   },
   {
     title: "youtube",
