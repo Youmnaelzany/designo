@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 import "./globals.css";
+import React from "react";
+import Container from "@/components/Container";
 
 const jost = Jost({
   subsets: ["latin"],
@@ -18,19 +20,20 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
+                                     children,
+                                   }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className={`${jost.className} antialiased`}>
-        <div className="flex min-h-screen flex-col">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
-      </body>
+    <body className={`${jost.className} antialiased`}>
+    <div className="flex min-h-screen flex-col">
+      <Header />
+      <main className="flex-1"><Container className={"px-6 py-8 md:px-8 md:py-12 lg:px-12"}>{children}</Container>
+      </main>
+      <Footer />
+    </div>
+    </body>
     </html>
   );
 }

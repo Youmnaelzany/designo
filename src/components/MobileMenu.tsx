@@ -1,12 +1,6 @@
 import { AlignRight } from "lucide-react";
 
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTrigger } from "@/components/ui/sheet";
 
 import NavigationLinks from "./NavigationLinks";
 import { SocialMedia } from "./OfficeInfo";
@@ -21,7 +15,7 @@ export default function MobileMenu() {
         <SheetHeader>
           {/* <SheetTitle>Are you absolutely sure?</SheetTitle> */}
           <SheetDescription>
-            <nav className="flex flex-col items-start gap-6 px-6 pt-20">
+            <nav className="flex flex-col items-start gap-10 px-6 pt-20">
               <NavigationLinks className="text-white" />
               <SocialMedia />
             </nav>
@@ -29,4 +23,5 @@ export default function MobileMenu() {
         </SheetHeader>
       </SheetContent>
     </Sheet>
-  )}
+  );
+}
