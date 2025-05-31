@@ -29,7 +29,7 @@ export default function RootLayout({
     <body className={`${jost.className} antialiased`}>
     <div className="flex min-h-screen flex-col">
       <Header />
-      <main className="flex-1"><Container className={"px-6 py-8 md:px-8 md:py-12 lg:px-12"}>{children}</Container>
+      <main className="flex-1"><Container className={"px-6 py-12 md:px-8 md:py-16 lg:px-12"}>{children}</Container>
       </main>
       <Footer />
     </div>
